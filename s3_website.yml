@@ -4,16 +4,8 @@ s3_endpoint: us-west-2
 s3_bucket: cloudguy.me
 gzip: true
 cache_control:
-<<<<<<< HEAD
-  "assets/*": public, max-age=3600
-  "*": public, max-age=300
-max_age:
-  "assets/*": 6000
-  "*": 300
-=======
   "assets/*": public, max-age=7200
   "*": public, max-age=7200
 max_age:
   "assets/*": 7200
   "*": 7200
->>>>>>> staging
