@@ -7,8 +7,222 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/rss.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 Jul 2016 12:30:10 -0500</pubDate>
-    <lastBuildDate>Thu, 28 Jul 2016 12:30:10 -0500</lastBuildDate>
+    <pubDate>Thu, 28 Jul 2016 12:32:01 -0500</pubDate>
+    <lastBuildDate>Thu, 28 Jul 2016 12:32:01 -0500</lastBuildDate>
+    
+    <item>
+      <title>PowerShell is now OpenSource?</title>
+      <description><![CDATA[ <h2 id="is-microsoft-about-to-open-source-powershell">Is Microsoft about to open source PowerShell?</h2>
+
+<p>Tom Hounsell <a href="https://twitter.com/tomhounsell">@tomhounsell</a> posted a rather interesting tweet yesterday</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just noticed this in the package metadata, guess that confirms <a href="https://twitter.com/h0x0d">@h0x0d</a>&#39;s Open Source rumour for <a href="https://twitter.com/hashtag/PowerShell?src=hash">#PowerShell</a> <a href="https://t.co/seoHEMGpYj">pic.twitter.com/seoHEMGpYj</a></p>&mdash; Tom Hounsell (@tomhounsell) <a href="https://twitter.com/tomhounsell/status/758313989487091712">July 27, 2016</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>That tweet comes on the heels of another user (<a href="https://twitter.com/h0x0d/">@h0x0d</a>) hinting that PowerShell <em>could</em> be released on to the public much like Microsoft did with .NET</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">hmm.... maybe PowerShell will be open sourced on GitHub soon, we&#39;ll see</p>&mdash; WalkingCat (@h0x0d) <a href="https://twitter.com/h0x0d/status/757585198926077956">July 25, 2016</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>The package information (metadata) clearly shows that one of two things are possible</p>
+
+<ol>
+  <li>
+    <p>There’s a really good troll out there trying to get easy clicks</p>
+  </li>
+  <li>
+    <p>Something awesome is about to happen</p>
+  </li>
+</ol>
+
+<p>So far this has not got a lot of media attention, and we’re only seeing tweets from two rather small Twitter users. However, with Windows adopting Bash. Then not to mention .NET being open source who knows what they have up their sleeves.</p>
+
+<p>Nothing official from the Redmond Campus has been released as of today July 28th, 2016.</p>
+
+<p>With <a href="https://www.blackhat.com/">Black Hat</a> starting in two days, and <a href="https://www.defcon.org/">DefCon</a> starting in a week who knows what we may see out of Redmond, WA.</p>
+
+<p>I can say this much, Satya Nadella has put an interesting spin on what I figured was a dying platform. He’s turned Microsoft into a major contender in the Cloud market, and it’s clear he has one thing on his mind….Profits.</p>
+
+<p>We’ll have to see what pans out from these rumors, but I wouldn’t be surprised if they ring true sooner rather than later.</p>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="http://localhost:4000/news/windows/powershell-open-source/">PowerShell is now OpenSource?</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
+ ]]></description>
+      <pubDate>Thu, 28 Jul 2016 00:00:00 -0500</pubDate>
+      <link>http://localhost:4000/news/windows/powershell-open-source/</link>
+      <guid isPermaLink="true">http://localhost:4000/news/windows/powershell-open-source/</guid>
+      
+      <category>News</category>
+      
+      <category>Windows</category>
+      
+    </item>
+    
+    <item>
+      <title>Laverna: Keeping track of your notes in the cloud</title>
+      <description><![CDATA[ <p>The application stores all your notes in your browser local storage spaces such as indexedDB or localStorage, which is good for security reasons, because only you have access to them. Currently you can sync your notes to DropBox and Remote Storage. It’s also highly secure because all of the data is stored in your browser (unless you decide to use Cloud Sync). This is also a downside if you want to have your notes on every device you own. If that’s the case, you’ll need use Cloud Sync</p>
+
+<h1 id="demohttpslavernacc"><a href="https://laverna.cc">Demo</a></h1>
+
+<h1 id="installation">Installation</h1>
+
+<p>To begin, we need a fresh Ubuntu 14.04 LTS Server. Mine will be using my AWS EC2 instance.</p>
+
+<p>Now, lets add our Laverna user</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">useradd laverna -m -d /home/laverna -s /bin/bash</code></pre></figure>
+
+<p>Next, we need to make sure that we have NodeJS, NPM, and GIT installed</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt-get install nodejs npm git</code></pre></figure>
+
+<p>Because Ubuntu is sometimes strange, we need to SymLink our nodejs binary to node</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ln -s /usr/bin/nodejs /usr/bin/nnode</code></pre></figure>
+
+<p>After we have our basics completed, lets switch to the laverna user and goto our home directory</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">su laverna
+<span class="nb">cd</span> ~</code></pre></figure>
+
+<p>Lets clone the Laverna repo</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/Laverna/laverna.git</code></pre></figure>
+
+<p>Once cloned, enter the newly created directory</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>laverna</code></pre></figure>
+
+<p>Checkout the current working production branch</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git checkout 0.6.2</code></pre></figure>
+
+<p>Use NPM to install bower, grunt, and grunt-cli</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install bower
+npm install grunt
+npm install grunt-cli</code></pre></figure>
+
+<p>Next, Alias bower and grunt for this session</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">alias </span><span class="nv">bower</span><span class="o">=</span><span class="s2">"./node_modules/bower/bin/bower"</span>
+<span class="nb">alias </span><span class="nv">grunt</span><span class="o">=</span><span class="s2">"./node_modules/grunt-cli/bin/grunt"</span></code></pre></figure>
+
+<p>Install Laverna’s dependencies</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install <span class="o">&amp;&amp;</span> bower install</code></pre></figure>
+
+<p>Build Laverna</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">grunt build</code></pre></figure>
+
+<p>Now that we have Laverna built into static files, we need to create a Virtual Host in our Web Server. Here’s an example for NGINX</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">server  <span class="o">{</span>
+    listen  80;
+    root /home/laverna/laverna/app;
+    index index.html;
+    server_name  notes.hudson.bz;
+    error_log  /var/log/nginx/notes.hudson.bz-error.log warn;
+    access_log  /var/log/nginx/notes.hudson.bz.com-access.log combined;
+        location ~<span class="k">*</span> <span class="se">\.</span><span class="o">(</span>jpg|jpeg|gif|css|png|js|ico|html<span class="o">)</span><span class="nv">$ </span><span class="o">{</span>
+          access_log off;
+          expires max;
+        <span class="o">}</span>
+        location ~ /<span class="se">\.</span>ht <span class="o">{</span>
+          deny  all;
+        <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>Finally, navigate to your site.
+Bonus Task</p>
+
+<p><strong>Add an SSL Certificate for even more security!</strong></p>
+
+<p>Example NGINX virtual host for SSL</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">server  <span class="o">{</span>
+    listen  80;
+    root /home/laverna/laverna/app;
+    index index.html;
+    server_name  notes.hudson.bz;
+    error_log  /var/log/nginx/notes.hudson.bz-error.log warn;
+    access_log  /var/log/nginx/notes.hudson.bz.com-access.log combined;
+        location ~<span class="k">*</span> <span class="se">\.</span><span class="o">(</span>jpg|jpeg|gif|css|png|js|ico|html<span class="o">)</span><span class="nv">$ </span><span class="o">{</span>
+          access_log off;
+          expires max;
+        <span class="o">}</span>
+        location ~ /<span class="se">\.</span>ht <span class="o">{</span>
+          deny  all;
+        <span class="o">}</span>
+<span class="o">}</span>
+server <span class="o">{</span>
+    listen 443;
+    root /home/laverna/laverna/app;
+    index index.html;
+    server_name  notes.hudson.bz;
+    ssl                   on;
+    ssl_certificate       /home/laverna/ssl/certbundle.pem;
+    ssl_certificate_key   /home/laverna/ssl/privkey.key;
+    ssl_prefer_server_ciphers on;
+    ssl_protocols         TLSv1;
+    ssl_ciphers           ALL:!aNULL:!ADH:!eNULL:!LOW:!EXP:RC4+RSA:+HIGH:+MEDIUM;
+    error_log  /var/log/nginx/notes.hudson.bz-error.log warn;
+    access_log  /var/log/nginx/notes.hudson.bz.com-access.log combined;
+<span class="o">}</span></code></pre></figure>
+
+<h1 id="enable-cloud-storage">Enable Cloud Storage</h1>
+
+<h2 id="warning">Warning</h2>
+
+<h3 id="you-must-use-https-for-dropbox-syncing">You must use HTTPS for DropBox syncing</h3>
+
+<p>You can generate a self-signed certificate if you need to</p>
+
+<p>Create a DropBox API Key <a href="https://www.dropbox.com/developers/apps">here</a></p>
+
+<p>When you create a new app at Dropbox’s Developer site you should keep in mind that:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">1<span class="o">)</span> Type of app should be Dropbox API app
+2<span class="o">)</span> Choose the <span class="nb">type </span>of access you need
+  App folder – Access to a single folder created specifically <span class="k">for </span>your app.
+3<span class="o">)</span>  Name
+  Should be unique</code></pre></figure>
+
+<p><img src="/assets/images/Screen-Shot-2016-07-28-11-40-44.png" alt="" />
+Once created, we need to add a Redirect URI. Under OAuth2 Redirect URIs add the following
+<code class="highlighter-rouge">https://mydomain.com/dropbox.html</code></p>
+
+<p>Click Add</p>
+
+<p><img src="/assets/images/Screenshot-2015-08-25-01-20-50.png" alt="" class="image fit" /></p>
+
+<p>Now, Go to Laverna settings <a href="https://mydomain.com/index.html#/settings">https://mydomain.com/index.html#/settings</a> and find Cloud Storage. Click DropBox, and enter your API Key in the box below.</p>
+
+<p><em>I recommend while you’re in settings, that you check the Use Encryption Box</em></p>
+
+<p>Then click Save!</p>
+
+<p><img src="/assets/images/Screenshot-2015-08-25-01-24-06.png" alt="" class="image fit" /></p>
+
+<p>You’ll be prompted to Authorize the app. Once that’s done, you’ll return to your Laverna app and your notes will be synced! They are saved in ~/Dropbox/Apps/AppName</p>
+
+<h2 id="you-now-have-an-amazing-note-keeping-app-that-can-be-accessed-anywhere">You now have an amazing note keeping app, that can be accessed anywhere</h2>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="http://localhost:4000/linux/nodejs/laverna-keeping-track-of-your-notes-in-the-cloud/">Laverna: Keeping track of your notes in the cloud</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
+ ]]></description>
+      <pubDate>Tue, 25 Aug 2015 00:00:00 -0500</pubDate>
+      <link>http://localhost:4000/linux/nodejs/laverna-keeping-track-of-your-notes-in-the-cloud/</link>
+      <guid isPermaLink="true">http://localhost:4000/linux/nodejs/laverna-keeping-track-of-your-notes-in-the-cloud/</guid>
+      
+      <category>Linux</category>
+      
+      <category>NodeJS</category>
+      
+    </item>
     
     <item>
       <title>Mail In a Box: Keeping the NSA out of your base since 2013</title>
@@ -132,7 +346,7 @@ It also came to a surprise because for such an advanced looking product, they se
 <span class="gp">$ </span>docker run --name<span class="o">=</span>gogs -p 10022:22 -p 10080:3000 -v /var/gogs:/data gogs/gogs
 
 <span class="c"># Use `docker start` if you have stopped it.</span>
-<span class="gp">$ </span>docker start gogs </code></pre></figure>
+<span class="gp">$ </span>docker start gogs</code></pre></figure>
 
 <p>That’s it, 4 lines and you have your own GitHub. A more in-depth installation guide will be showing up soon, but for now you can head over to Gogs themselves and go thought their <a href="http://gogs.io/docs/installation/install_from_binary.html">documentation</a></p>
  

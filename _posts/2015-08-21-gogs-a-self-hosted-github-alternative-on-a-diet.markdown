@@ -3,7 +3,7 @@ layout: post
 title: 'Gogs: A self hosted GitHub alternative on a diet'
 categories: Linux Git
 tags: OpenSource Linux Cloud Self-Hosted
-excerpt: "What's better than hosting your own private GUI for Git so we can keep all of our potentially world ending code from the NSA? Alright, I'll move the tin foil hat the the side for another day. However, when that front end is only consuming 88mb of RAM and the closest competition (cough, cough, GitLab) eats an entire gigabyte before it even finishes starting you know we may have a winner."
+excerpt: "What's better than hosting your own private GUI for Git so we can keep all of our potentially world ending code from the NSA? Alright, I'll move the tin foil hat to the side for another day. However, when that front end is only consuming 88mb of RAM and the closest competition (cough, cough, GitLab) eats an entire gigabyte before it even finishes starting you know we may have a winner."
 time: 10
 difficulty: "Beginner"
 ---
@@ -33,7 +33,7 @@ $ mkdir -p /var/gogs
 $ docker run --name=gogs -p 10022:22 -p 10080:3000 -v /var/gogs:/data gogs/gogs
 
 # Use `docker start` if you have stopped it.
-$ docker start gogs 
+$ docker start gogs
 
 {% endhighlight %}
 

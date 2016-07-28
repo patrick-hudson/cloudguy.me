@@ -4,6 +4,36 @@
   
     
     <url>
+      <loc>http://localhost:4000/news/windows/powershell-open-source/</loc>
+      
+        <lastmod>2016-07-28T00:00:00-05:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/linux/nodejs/laverna-keeping-track-of-your-notes-in-the-cloud/</loc>
+      
+        <lastmod>2015-08-25T00:00:00-05:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://localhost:4000/linux/email/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013/</loc>
       
         <lastmod>2015-08-24T00:00:00-05:00</lastmod>
@@ -60,7 +90,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2016-07-28T12:30:10-05:00</lastmod>
+        <lastmod>2016-07-28T12:32:01-05:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -81,7 +111,7 @@
     <url>
       <loc>http://localhost:4000/search/</loc>
       
-        <lastmod>2016-07-28T12:30:10-05:00</lastmod>
+        <lastmod>2016-07-28T12:32:01-05:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
