@@ -8,6 +8,7 @@ install:
   - bundle install
   - gem install s3_website
 script: bundle exec jekyll build
+after_success: s3_website push
 branches:
   only:
     - master
