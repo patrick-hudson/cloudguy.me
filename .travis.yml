@@ -1,8 +1,7 @@
 language: ruby
 rvm:
   - 2.2
-install: gem install jekyll
-script: bundle install && bundle exec jekyll build
-branches:
-  only:
-    - master
+gemfile:
+  - GemFile
+install: gem install jekyll && bundle install
+script: bundle exec jekyll build
