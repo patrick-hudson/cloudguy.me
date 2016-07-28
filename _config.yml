@@ -20,4 +20,4 @@ gems:
   - jekyll-paginate
 paginate_path: "/page/:num/"
 paginate: 5
-permalink: /:categories/:title
+permalink: /:categories/:title/
