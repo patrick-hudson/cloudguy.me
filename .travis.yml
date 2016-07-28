@@ -5,8 +5,8 @@ gemfile:
   - GemFile
 install: 
   - gem install jekyll 
-  - gem install s3_website
   - bundle install
+  - gem install s3_website
 script: bundle exec jekyll build
 branches:
   only:
