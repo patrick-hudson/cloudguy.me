@@ -26,6 +26,11 @@ The package information (metadata) clearly shows that one of two things are poss
 
 2. Something awesome is about to happen
 
+Tom Hounsell [@tomhounsell](https://twitter.com/tomhounsell) also posted two images showing PSCore built on both Linux and OSX
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hell, you know what, here&#39;s some screens of a build of <a href="https://twitter.com/hashtag/Powershell?src=hash">#Powershell</a> (PSCore) running on Linux and OSX /cc <a href="https://twitter.com/h0x0d">@h0x0d</a> <a href="https://t.co/lWM2W15AJV">pic.twitter.com/lWM2W15AJV</a></p>&mdash; Tom Hounsell (@tomhounsell) <a href="https://twitter.com/tomhounsell/status/757591799317819393">July 25, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 So far this has not got a lot of media attention, and we're only seeing tweets from two rather small Twitter users. However, with Windows adopting Bash. Then not to mention .NET being open source who knows what they have up their sleeves.
 
 Nothing official from the Redmond Campus has been released as of today July 28th, 2016.
