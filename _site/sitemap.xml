@@ -4,7 +4,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/linux/email/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013</loc>
+      <loc>http://localhost:4000/linux/email/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013/</loc>
       
         <lastmod>2015-08-24T00:00:00-05:00</lastmod>
       
@@ -19,7 +19,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/linux/git/gogs-a-self-hosted-github-alternative-on-a-diet</loc>
+      <loc>http://localhost:4000/linux/git/gogs-a-self-hosted-github-alternative-on-a-diet/</loc>
       
         <lastmod>2015-08-21T00:00:00-05:00</lastmod>
       
@@ -34,7 +34,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/linux/python/automated-amazon-ebs-snapshots</loc>
+      <loc>http://localhost:4000/linux/python/automated-amazon-ebs-snapshots/</loc>
       
         <lastmod>2015-08-20T00:00:00-05:00</lastmod>
       
@@ -60,7 +60,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2016-07-28T06:42:35-05:00</lastmod>
+        <lastmod>2016-07-28T07:19:10-05:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -79,9 +79,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/search</loc>
+      <loc>http://localhost:4000/search/</loc>
       
-        <lastmod>2016-07-28T06:42:35-05:00</lastmod>
+        <lastmod>2016-07-28T07:19:10-05:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
