@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Gogs: A self hosted GitHub alternative on a diet - I'm in a Cloud!</title>
+<meta charset="utf-8" />
+<meta name="description" content="What's better than hosting your own private GUI for Git so we can keep all of our potentially world ending code from the NSA? Alright, I'll move the tin foil hat the the side for another day. However, when that front end is only consuming 88mb of RAM and the closest competition (cough, cough, GitLab) eats an entire gigabyte before it even finishes starting you know we may have a winner." />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="/assets/css/main.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Sitewide ATOM Feed" />
+<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="Sitewide RSS Feed" />
+<link rel="author" type="text/plain" href="/humans.txt" />
+
+    <!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Gogs: A self hosted GitHub alternative on a diet" />
+<meta property="og:description" content="What's better than hosting your own private GUI for Git so we can keep all of our potentially world ending code from the NSA? Alright, I'll move the tin foil hat the the side for another day. However, when that front end is only consuming 88mb of RAM and the closest competition (cough, cough, GitLab) eats an entire gigabyte before it even finishes starting you know we may have a winner." />
+<meta property="og:site_name" content="I'm in a Cloud!" />
+<meta property="og:url" content="/gogs-a-self-hosted-github-alternative-on-a-diet" />
+
+
+    
+
+  </head>
+	<body id="top">
+
+		<!-- Header -->
+  <header id="header">
+    <a href="/" class="image avatar"><img src="https://avatars0.githubusercontent.com/u/5728403?v=3&s=460" alt="" /></a>
+    <h1><strong>I am Patrick</strong>, I’m a guy who always manages to find himself neck deep in the Cloud, and someone who likes to break it.  I also tend to get drunk sometimes.
+</h1>
+  </header>
+
+
+		<!-- Main -->
+		<div id="main">
+      <article>
+        <header class="major">
+          <h2>Gogs: A self hosted GitHub alternative on a diet</h2>
+          <p>
+            <span class="hint--bottom" aria-label="Posted On">
+              <i class="fa fa-calendar"></i> 
+            </span>
+              21 August 2015
+             on
+            <span class="hint--bottom" aria-label="Categories">
+              <i class="fa fa-tags"></i> 
+            </span>
+              OpenSource, Cloud, and Self-Hosted.
+            
+            <span class="hint--bottom" aria-label="Estimated time to complete">
+              <i class="fa fa-clock-o"></i> 
+            </span>
+            10 minutes
+            <span class="hint--bottom" aria-label="Difficulty">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </span> 
+            Beginner
+          </p>
+        </header>
+
+        <section>
+          <p>In walks <a href="https://try.gogs.io/" target="_blank">Gogs</a>, a seriously streamlined platform for all of your revision control needs.</p>
+
+<p><img src="https://puu.sh/jILoV/ea1ff9bb78.png" alt="" class="image fit" /></p>
+
+<p>Now, don’t get me wrong, GitLab, GitHub Enterprise and the Monopoly know as Atlassian have there own each established market sectors. You are not going to get every single feature of a multi thousand dollar licensed product. There are a few, almost hilariously missing pieces that makes Gogs unusable by any of not all team based development operations. Those two things are Pull Requests and any type of Code Review. However, as a single developer wanting a place to store my code that I’d never, ever want to see the light of day on GitHub. It’s a seriously great middle ground between Enterprise and Hobby.
+It also came to a surprise because for such an advanced looking product, they seem to have shown up over night. With just over <a href="https://github.com/gogits/gogs/commits/master?page=76">70 Pages</a> of commits on GitHub starting in March of 2014, they have managed to create an amazing product that runs rather well, and has the added benefit of being written in GO. There is good news regarding the two blatant issues that prevent Gogs from becoming anything usable in this market, and thats <a href="https://github.com/go-gitea/gitea">Gitea</a>. <em>Disclaimer I have not extensively tested Gitea but it is at its core a fork of Gogs</em></p>
+
+<p>All your basic GitHub-esk functionality exists, you can create repos, both public and private, there’s an issue tracker for each repo and of course SSH based access for secure commits and pulls.</p>
+
+<p><img src="https://puu.sh/jILnh/c9ea270be7.png" alt="" class="image fit" /></p>
+
+<p>Keep your eyes pealed for my post about getting it installed, but in all honesty it’s so simple to install that a dedicated post is over kill! Not to mention, if you use one of their <a href="https://github.com/gogits/gogs/tree/master/docker">Docker</a> configs or <a href="https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gogs">VagrantFiles</a> you’ll be up and running in a matter of seconds.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Pull image from Docker Hub.</span>
+<span class="gp">$ </span>docker pull gogs/gogs
+
+<span class="c"># Create local directory for volume.</span>
+<span class="gp">$ </span>mkdir -p /var/gogs
+
+<span class="c"># Use `docker run` for the first time.</span>
+<span class="gp">$ </span>docker run --name<span class="o">=</span>gogs -p 10022:22 -p 10080:3000 -v /var/gogs:/data gogs/gogs
+
+<span class="c"># Use `docker start` if you have stopped it.</span>
+<span class="gp">$ </span>docker start gogs </code></pre></figure>
+
+<p>That’s it, 4 lines and you have your own GitHub. A more in-depth installation guide will be showing up soon, but for now you can head over to Gogs themselves and go thought their <a href="http://gogs.io/docs/installation/install_from_binary.html">documentation</a></p>
+
+        </section>
+      </article>
+
+      
+
+
+      
+      <hr />
+      <div class="row">
+        <article class="6u 12u$(xsmall) work-item">
+          
+          <p>Previous</p>
+  				<h3><a href="/automated-amazon-ebs-snapshots">Automated Amazon EBS Snapshots - Ubuntu 14.04 LTS</a></h3>
+  				<p>Wouldn't it be cool if we could schedule EBS Snapshots with features like backup purging based on how old they are, or possibly target specific instances that are tagged</p>
+          
+  			</article>
+  			<article class="6u$ 12u$(xsmall) work-item">
+          
+          <p>Next</p>
+  				<h3><a href="/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013">Mail In a Box: Keeping the NSA out of your base since 2013</a></h3>
+  				<p>Since before it was widely known that the internet wasn't as secure as we hoped, I've been one to run applications in my own environment instead of taking advantage of the commercialized products easily available. Sometimes it's simply for the sheer amount of control, and others it's because I don't want my Drunk Spending on Amazon to be tied to my email accounts. It's not always the best thing that Google and Amazon can now predict the exact days and times I'll be most inebriated and offer me 'Great deals'</p>
+          
+  			</article>
+      </div>
+      
+
+		</div>
+
+    <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      
+      
+      
+      <li><a href="https://linkedin.com/in/hudsonpatrick" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+      
+      
+      
+      
+      
+      <li><a href="https://github.com/patrick-hudson" class="icon fa-github"><span class="label">Github</span></a></li>
+      
+      
+      <li><a href="mailto:phudson2@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      
+      
+      <li><a href="/rss.xml" class="icon fa-rss"><span class="label">Feed</span></a></li>
+      
+    </ul>
+    <ul class="copyright">
+      <li>&copy; Patrick Hudson</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </footer>
+
+    <!-- Scripts -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery.poptrox.min.js"></script>
+  <script src="/assets/js/skel.min.js"></script>
+  <script src="/assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="/assets/js/main.js"></script>
+
+
+	</body>
+</html>
