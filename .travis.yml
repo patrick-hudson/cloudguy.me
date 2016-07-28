@@ -3,5 +3,11 @@ rvm:
   - 2.2
 gemfile:
   - GemFile
-install: gem install jekyll && bundle install
+install: 
+  - gem install jekyll 
+  - gem install s3_website
+  - bundle install
 script: bundle exec jekyll build
+branches:
+  only:
+    - master

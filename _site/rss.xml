@@ -7,8 +7,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/rss.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 Jul 2016 04:31:46 -0500</pubDate>
-    <lastBuildDate>Thu, 28 Jul 2016 04:31:46 -0500</lastBuildDate>
+    <pubDate>Thu, 28 Jul 2016 06:39:40 -0500</pubDate>
+    <lastBuildDate>Thu, 28 Jul 2016 06:39:40 -0500</lastBuildDate>
     
     <item>
       <title>Mail In a Box: Keeping the NSA out of your base since 2013</title>
@@ -95,21 +95,15 @@ C0:9B:FF:04:2B:2D:8F:47:5A:8B:D5:88:B7:05:D3:4B:6C:22:80:5F</code></pre></figure
  
 <br />
 <hr />
-<p>You’ve just read <strong>"<a href="http://localhost:4000/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013">Mail In a Box: Keeping the NSA out of your base since 2013</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
+<p>You’ve just read <strong>"<a href="http://localhost:4000/linux/email/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013">Mail In a Box: Keeping the NSA out of your base since 2013</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
  ]]></description>
       <pubDate>Mon, 24 Aug 2015 00:00:00 -0500</pubDate>
-      <link>http://localhost:4000/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013</link>
-      <guid isPermaLink="true">http://localhost:4000/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013</guid>
-      
-      <category>OpenSource</category>
-      
-      <category>Cloud</category>
-      
-      <category>Self-Hosted</category>
-      
-      <category>Email</category>
+      <link>http://localhost:4000/linux/email/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013</link>
+      <guid isPermaLink="true">http://localhost:4000/linux/email/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013</guid>
       
       <category>Linux</category>
+      
+      <category>EMail</category>
       
     </item>
     
@@ -144,17 +138,15 @@ It also came to a surprise because for such an advanced looking product, they se
  
 <br />
 <hr />
-<p>You’ve just read <strong>"<a href="http://localhost:4000/gogs-a-self-hosted-github-alternative-on-a-diet">Gogs: A self hosted GitHub alternative on a diet</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
+<p>You’ve just read <strong>"<a href="http://localhost:4000/linux/git/gogs-a-self-hosted-github-alternative-on-a-diet">Gogs: A self hosted GitHub alternative on a diet</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
  ]]></description>
       <pubDate>Fri, 21 Aug 2015 00:00:00 -0500</pubDate>
-      <link>http://localhost:4000/gogs-a-self-hosted-github-alternative-on-a-diet</link>
-      <guid isPermaLink="true">http://localhost:4000/gogs-a-self-hosted-github-alternative-on-a-diet</guid>
+      <link>http://localhost:4000/linux/git/gogs-a-self-hosted-github-alternative-on-a-diet</link>
+      <guid isPermaLink="true">http://localhost:4000/linux/git/gogs-a-self-hosted-github-alternative-on-a-diet</guid>
       
-      <category>OpenSource</category>
+      <category>Linux</category>
       
-      <category>Cloud</category>
-      
-      <category>Self-Hosted</category>
+      <category>Git</category>
       
     </item>
     
@@ -262,17 +254,15 @@ apt-get install python python-setuptools</code></pre></figure>
  
 <br />
 <hr />
-<p>You’ve just read <strong>"<a href="http://localhost:4000/automated-amazon-ebs-snapshots">Automated Amazon EBS Snapshots - Ubuntu 14.04 LTS</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
+<p>You’ve just read <strong>"<a href="http://localhost:4000/linux/python/automated-amazon-ebs-snapshots">Automated Amazon EBS Snapshots - Ubuntu 14.04 LTS</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
  ]]></description>
       <pubDate>Thu, 20 Aug 2015 00:00:00 -0500</pubDate>
-      <link>http://localhost:4000/automated-amazon-ebs-snapshots</link>
-      <guid isPermaLink="true">http://localhost:4000/automated-amazon-ebs-snapshots</guid>
+      <link>http://localhost:4000/linux/python/automated-amazon-ebs-snapshots</link>
+      <guid isPermaLink="true">http://localhost:4000/linux/python/automated-amazon-ebs-snapshots</guid>
       
-      <category>AWS</category>
+      <category>Linux</category>
       
-      <category>Ubuntu</category>
-      
-      <category>Cloud</category>
+      <category>Python</category>
       
     </item>
     

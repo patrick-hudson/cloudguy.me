@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 'Automated Amazon EBS Snapshots - Ubuntu 14.04 LTS'
-categories: AWS Ubuntu Cloud
+categories: Linux Python
+tags: AWS Ubuntu Cloud Linux Python
 excerpt: "Wouldn't it be cool if we could schedule EBS Snapshots with features like backup purging based on how old they are, or possibly target specific instances that are tagged"
 time: 20
 difficulty: "Intermediate"

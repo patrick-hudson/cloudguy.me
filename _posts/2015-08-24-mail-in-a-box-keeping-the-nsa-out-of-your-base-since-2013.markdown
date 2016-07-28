@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 'Mail In a Box: Keeping the NSA out of your base since 2013'
-categories: OpenSource Cloud Self-Hosted Email Linux
+tags: OpenSource Cloud Self-Hosted Email Linux
+categories: Linux EMail
 excerpt: "Since before it was widely known that the internet wasn't as secure as we hoped, I've been one to run applications in my own environment instead of taking advantage of the commercialized products easily available. Sometimes it's simply for the sheer amount of control, and others it's because I don't want my Drunk Spending on Amazon to be tied to my email accounts. It's not always the best thing that Google and Amazon can now predict the exact days and times I'll be most inebriated and offer me 'Great deals'"
 time: 45
 difficulty: "Intermediate"

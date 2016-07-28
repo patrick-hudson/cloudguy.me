@@ -24,11 +24,11 @@
               <i class="fa fa-calendar"></i> 
             </span>
               {{ page.date | date: "%d %B %Y" }}
-            {% if page.categories %} on
+            {% if page.tags %} on
             <span class="hint--bottom" aria-label="Categories">
               <i class="fa fa-tags"></i> 
             </span>
-              {{ page.categories | array_to_sentence_string }}.
+              {{ page.tags | array_to_sentence_string }}.
             {% endif %}
             <span class="hint--bottom" aria-label="Estimated time to complete">
               <i class="fa fa-clock-o"></i> 

@@ -7,13 +7,13 @@
 	<link href="http://localhost:4000/atom.xml" rel="self" />
 	<link href="http://localhost:4000/" />
 	<id>http://localhost:4000/</id>
-	<updated>2016-07-28T04:31:46-05:00</updated>
+	<updated>2016-07-28T06:39:40-05:00</updated>
   
 	<entry>
 		<title>Mail In a Box: Keeping the NSA out of your base since 2013</title>
-		<link href="http://localhost:4000/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013" />
-		<link rel="alternate" type="text/html" href="http://localhost:4000/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013"/>
-		<id>http://localhost:4000/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013</id>
+		<link href="http://localhost:4000/linux/email/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013" />
+		<link rel="alternate" type="text/html" href="http://localhost:4000/linux/email/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013"/>
+		<id>http://localhost:4000/linux/email/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013</id>
 		<updated>2015-08-24T00:00:00-05:00</updated>
 		<summary>Some text.</summary>
 		<content type="xhtml">
@@ -101,7 +101,7 @@ C0:9B:FF:04:2B:2D:8F:47:5A:8B:D5:88:B7:05:D3:4B:6C:22:80:5F</code></pre></figure
  
 <br />
 <hr />
-<p>You’ve just read <strong>"<a href="http://localhost:4000/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013">Mail In a Box: Keeping the NSA out of your base since 2013</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
+<p>You’ve just read <strong>"<a href="http://localhost:4000/linux/email/mail-in-a-box-keeping-the-nsa-out-of-your-base-since-2013">Mail In a Box: Keeping the NSA out of your base since 2013</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
 
 			</div>
 		</content>
@@ -112,9 +112,9 @@ C0:9B:FF:04:2B:2D:8F:47:5A:8B:D5:88:B7:05:D3:4B:6C:22:80:5F</code></pre></figure
   
 	<entry>
 		<title>Gogs: A self hosted GitHub alternative on a diet</title>
-		<link href="http://localhost:4000/gogs-a-self-hosted-github-alternative-on-a-diet" />
-		<link rel="alternate" type="text/html" href="http://localhost:4000/gogs-a-self-hosted-github-alternative-on-a-diet"/>
-		<id>http://localhost:4000/gogs-a-self-hosted-github-alternative-on-a-diet</id>
+		<link href="http://localhost:4000/linux/git/gogs-a-self-hosted-github-alternative-on-a-diet" />
+		<link rel="alternate" type="text/html" href="http://localhost:4000/linux/git/gogs-a-self-hosted-github-alternative-on-a-diet"/>
+		<id>http://localhost:4000/linux/git/gogs-a-self-hosted-github-alternative-on-a-diet</id>
 		<updated>2015-08-21T00:00:00-05:00</updated>
 		<summary>Some text.</summary>
 		<content type="xhtml">
@@ -148,7 +148,7 @@ It also came to a surprise because for such an advanced looking product, they se
  
 <br />
 <hr />
-<p>You’ve just read <strong>"<a href="http://localhost:4000/gogs-a-self-hosted-github-alternative-on-a-diet">Gogs: A self hosted GitHub alternative on a diet</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
+<p>You’ve just read <strong>"<a href="http://localhost:4000/linux/git/gogs-a-self-hosted-github-alternative-on-a-diet">Gogs: A self hosted GitHub alternative on a diet</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
 
 			</div>
 		</content>
@@ -159,9 +159,9 @@ It also came to a surprise because for such an advanced looking product, they se
   
 	<entry>
 		<title>Automated Amazon EBS Snapshots - Ubuntu 14.04 LTS</title>
-		<link href="http://localhost:4000/automated-amazon-ebs-snapshots" />
-		<link rel="alternate" type="text/html" href="http://localhost:4000/automated-amazon-ebs-snapshots"/>
-		<id>http://localhost:4000/automated-amazon-ebs-snapshots</id>
+		<link href="http://localhost:4000/linux/python/automated-amazon-ebs-snapshots" />
+		<link rel="alternate" type="text/html" href="http://localhost:4000/linux/python/automated-amazon-ebs-snapshots"/>
+		<id>http://localhost:4000/linux/python/automated-amazon-ebs-snapshots</id>
 		<updated>2015-08-20T00:00:00-05:00</updated>
 		<summary>Some text.</summary>
 		<content type="xhtml">
@@ -268,7 +268,7 @@ apt-get install python python-setuptools</code></pre></figure>
  
 <br />
 <hr />
-<p>You’ve just read <strong>"<a href="http://localhost:4000/automated-amazon-ebs-snapshots">Automated Amazon EBS Snapshots - Ubuntu 14.04 LTS</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
+<p>You’ve just read <strong>"<a href="http://localhost:4000/linux/python/automated-amazon-ebs-snapshots">Automated Amazon EBS Snapshots - Ubuntu 14.04 LTS</a>"</strong> on <strong>"<a href="http://localhost:4000/">I'm in a Cloud!</a>"</strong>.</p>
 
 			</div>
 		</content>
