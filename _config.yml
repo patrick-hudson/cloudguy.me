@@ -1,14 +1,13 @@
-title: I'm in a Cloud!
+title: Technical ramblings of a DevOps Engineer
 description: >
-  **I am Patrick**, I'm a guy who always manages to find himself neck deep in the Cloud, and someone who likes to break it. 
-  I also tend to get drunk sometimes.
+  **I am Patrick**, DevOps Engineer and Whiskey Enthusiest
 copyright: Patrick Hudson
 sass:
   sass_dir: assets/sass
 url: http://localhost:4000
-disqus_shortname: 
+disqus_shortname:
 facebook_username:
-twitter_username: 
+twitter_username: "iamcloudguy"
 linkedin_username: "hudsonpatrick"
 instagram_username:
 pinterest_username:
@@ -16,7 +15,7 @@ flickr_username:
 github_username:  "patrick-hudson"
 feed_icon: rss
 email: "phudson2@gmail.com"
-gems: 
+gems:
   - jekyll-paginate
 paginate_path: "/page/:num/"
 paginate: 5
